@@ -1,0 +1,122 @@
+
+.navigation {
+  display: flex;
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.position {
+  display: flex;
+  align-items: center;
+}
+
+.logo-web {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--brand-color);
+}
+
+.menu-logo__span {
+  text-decoration: none;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 93px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  list-style: none;
+
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+
+  &__link {
+
+    text-decoration: none;
+    color: var(--main-color);
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-function);
+
+    &:focus {
+      color: var(--brand-color);
+    }
+
+    &:hover {
+      color: var(--brand-color);
+    }
+  }
+}
+
+.current::after {
+  content: "";
+  display: block;
+  position: relative;
+  border-top: 4px solid var(--brand-color);
+  border-radius: 2px;
+  top: 30px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 345px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    list-style: none;
+  
+      &__item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+  
+        &:not(:last-child) {
+          margin-right: 46px;
+        }
+      }
+  
+      &__link {
+        display: flex;
+        text-decoration: none;
+        color: var(--main-gray-color);
+        fill: var(--main-gray-color);
+        transition-property: color, fill;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--transition-function);
+  
+        &:hover {
+          color: var(--brand-color);
+          fill: var(--brand-color);
+        }
+  
+        &:focus {
+          color: var(--brand-color);
+          fill: var(--brand-color);
+        }
+      }
+  
+      &__icon {
+  
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+      }
+  }
+
