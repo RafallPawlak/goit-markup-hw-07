@@ -37,6 +37,8 @@ ul {
 }
 
 body {
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--main-color);
@@ -277,6 +279,8 @@ body {
 }
 
 .navigation {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   border-bottom: 1px solid var(--header-border-color);
 }
@@ -385,11 +389,10 @@ body {
 }
 
 .order {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  max-height: 600px;
+  margin: auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--background-dark-color);
   background-image: var(--order-gradient), url(../images/order-background.jpg);
   background-repeat: no-repeat;
@@ -397,6 +400,8 @@ body {
   background-size: cover;
 }
 .order__container {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   padding-top: 200px;
@@ -434,6 +439,8 @@ body {
 }
 
 .features-padding {
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 0px;
 }
 
@@ -604,6 +611,8 @@ body {
 }
 
 .footer__page {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 68px;
   padding-bottom: 52px;
   color: var(--white-color);
